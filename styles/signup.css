@@ -1,0 +1,141 @@
+/* Estilos gerais */
+body {
+  background-color: #ffbc11;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos do cabeçalho */
+header {
+  background-color: #002c2b;
+  height: 60px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+/* Estilos do container principal */
+.container {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  margin-top: 100px;
+  max-width: 400px;
+  padding: 40px;
+}
+
+/* Estilos do logo */
+.logo {
+  align-items: center;
+  color: #333;
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.logo img {
+  height: 190px;
+  margin-right: 10px;
+  width: 190px;
+}
+
+/* Estilos do título do container */
+.container h2 {
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Estilos dos grupos de campos */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  color: #555;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Estilos dos campos de entrada */
+.input-field {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  color: #333;
+  font-size: 16px;
+  padding: 12px;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+.input-field:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.input-field::placeholder {
+  color: #999;
+}
+
+/* Estilos do botão de envio */
+.submit-btn {
+  background-color: #076461;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #002c2b;
+}
+
+/* Estilos de mensagens de erro */
+.container .error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Estilos do link "Já tem uma conta?" */
+a {
+  color: #999;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #555;
+}
+
+/* Estilos do rodapé */
+footer {
+  background-color: #002c2b;
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  padding: 10px;
+  position: fixed;
+  right: 0;
+  text-align: center;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 50px;
+    padding: 10px;
+  }
+}
