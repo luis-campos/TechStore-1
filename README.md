@@ -1,8 +1,9 @@
 <h1>Loja Onlines</h1>
-
- <img src="https://github.com/luis-campos/loja-onlines/assets/60624512/b8e28142-e6f9-4b7a-8027-da8ef290f7a8" width="250" />
-
+<img src="https://github.com/luis-campos/loja-onlines/assets/60624512/b8e28142-e6f9-4b7a-8027-da8ef290f7a8" width="250" />
 <p>O projeto Loja Onlines é um e-commerce falso criado para ser usado de base para escrita de cenários de teste, testes manuais e automação de testes.</p>
+
+<h2>Acesso ao projeto</h2>
+<p>Link do projeto: https://loja-onlines.netlify.app/</p>
 
 <h2>📖 Regras de negócio: </h2>
 <h3>Tela de Login</h3>
