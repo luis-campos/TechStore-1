@@ -1,46 +1,115 @@
-<h1>Loja Onlines</h1>
-<img src="https://github.com/luis-campos/loja-onlines/assets/60624512/b8e28142-e6f9-4b7a-8027-da8ef290f7a8" width="250" />
-<p>O projeto Loja Onlines é um e-commerce falso criado para ser usado de base para escrita de cenários de teste, testes manuais e automação de testes.</p>
+# TechStore - Documentação do Projeto
 
-<h2>Acesso ao projeto</h2>
-<p>Link do projeto: https://loja-onlines.netlify.app/</p>
+**TechStore** é um e-commerce fictício desenvolvido para simular um ambiente real de vendas online. O objetivo deste projeto é servir como base para estudos de desenvolvimento web e práticas de Quality Assurance (QA).
 
-<h2>📖 Regras de negócio: </h2>
-<h3>Tela de Login</h3>
+URL do projeto em produção: **[https://techstore-qa.netlify.app/](https://techstore-qa.netlify.app/)**
 
-<img src="https://github.com/luis-campos/loja-onlines/assets/60624512/a4fec878-9a4e-479d-ba28-15a365933633" width="400" />
+---
 
-- O campo "Nome de usuário" não pode ser vazio, caso esteja vazio deve aparecer a mensagem de erro "Por favor, insira um nome de usuário.".
-- O campo "Senha" não pode ser vazio, caso esteja vazio deve aparecer a mensagem de erro "Por favor, insira uma senha.".
-- Caso nome de usuário, ou senha esteja incorreto, deve aparecer a mensagem de erro "Usuário ou senha incorretos.".
-- Se nome de usuário e senha estiverem corretos, então ao clicar no botão "Entrar", o usuário deve ser direcionado para a homepage.
-- Se o usuário não estiver cadastrado na plataforma e clicar no botão "Criar Conta", ele deve ser redirecionado para a tela de Cadastro de Usuário.
+## 📌 Visão Geral
 
-<h3>Tela de Cadastro de Usuário</h3>
+O **TechStore** busca reproduzir a experiência de um site de comércio eletrônico com páginas de produtos, navegação por categorias, carrinho de compras e seções institucionais. Além disso, o projeto fornece um espaço para exercitar boas práticas de QA, como:
 
-<img src="https://github.com/luis-campos/loja-onlines/assets/60624512/5c091752-3ecb-4101-a809-e6865fe08b9f" width="400" />
+* Criação e execução de **casos de teste manuais**.
+* Escrita de cenários para **automação de testes end-to-end**.
+* Avaliação de **usabilidade e acessibilidade**.
+* Simulação de relatórios e processos de QA aplicados a um sistema real.
 
-- O campo "Nome de usuário" não pode ser vazio, caso esteja vazio deve aparecer a mensagem de erro "O nome de usuário deve ter pelo menos 5 caracteres.".
-- O campo "Senha" não pode ser vazio e tem apenas números, caso esteja vazio, ou tenha qualquer outro caracter que não seja número deve aparecer a mensagem de erro "A senha deve ter pelo menos 5 caracteres e conter somente números.".
-- O campo "Confirme a senha" tem uma validação para verificar se a senha foi digitada igualmente nos dois campos, caso as senhas estejam diferentes deve aparecer a mensagem de erro "As senhas não coincidem.".
-- Se o usuário digitar um nome e senha válidos, ao clicar no botão "Cadastrar", as informações devem ser guardadas no LocalStorage e ele deve ser direcionado para a homepage.
-- Caso o usuário clique no botão "Faça login", ele deve voltar para a tela de login.
+---
 
-<h3>Tela de Produtos</h3>
+## 🧭 Funcionalidades Principais
 
-<img src="https://github.com/luis-campos/loja-onlines/assets/60624512/febb9e4b-8883-4c86-b59b-e20424c3bd27" width="400" />
+* **Página inicial** com destaques e banners promocionais.
+* **Catálogo de produtos** organizado por categorias.
+* **Carrinho de compras** para adicionar/remover itens.
+* **Formulário de inscrição** para receber novidades.
+* **Páginas institucionais** (Sobre, Contato, Suporte, Políticas, etc.).
+* **Footer** com links de navegação e redes sociais.
 
-- Na tela de produtos existem 15 produtos, cada um com foto, nome, descrição, preço e um botão para aumentar(+), ou diminuir(-) a quantidade.
-- Ao clicar no botão de aumentar(+), ou diminuir(-) a quantidade, o valor deve ser atualizado no final na página.
-- Ao clicar no botão "Comprar", os itens selecionados devem ser guardados no LocalStorage o id, nome, preço e quantidade do produto e o usuário deve ser redirecionado para a página de Checkout.
+---
 
-<h3>Tela de Checkout</h3>
+## 🧪 Testes Sugeridos
 
-<img src="https://github.com/luis-campos/loja-onlines/assets/60624512/3bb974ca-d3f9-43cd-ad5c-92ba360be0ea" width="400" />
+### Página Inicial
 
-- Na tela de Checkout deve ser exibido todos os produtos selecionados em forma de lista com o id, nome, preço e quantidade de cada produto e um botão para excluir o produto e o preço total.
-- Ao clicar no botão "X" o produto selecionado deve ser removido da lista e o preço total deve ser atualizado.
-- No campo "Email", deve ser inserido um email válido.
-- Só deve aparecer os campos "Número do cartão", "Nome do Titular", "Mês", "Ano" e "CVV" quando um método de pagamento for selecionado.
-- Ao clicar no botão "Voltar", o usuário deve voltar para a página de produtos.
-- Ao clicar no botão "Finalizar Compra", deve ser exibida a mensagem "Compra efetuada com sucesso.".
+* Validar exibição correta de banners e destaques.
+* Verificar navegação pelo menu superior.
+
+### Navegação
+
+* Acessar todas as páginas disponíveis pelo header e footer.
+* Validar se os links redirecionam para os destinos corretos.
+
+### Carrinho
+
+* Adicionar um produto ao carrinho.
+* Remover um produto do carrinho.
+* Atualizar quantidades e verificar valores.
+
+### Formulário de Inscrição
+
+* Testar envio de e-mail válido.
+* Validar mensagens de erro para e-mails inválidos.
+
+### Acessibilidade
+
+* Navegação via teclado (Tab/Shift+Tab).
+* Leitura de conteúdos por leitor de tela.
+* Contraste de cores conforme recomendações WCAG.
+
+---
+
+## 📋 Template de Caso de Teste
+
+* **Título:** [Funcionalidade] O que será testado
+* **Pré-condições:** estado inicial necessário
+* **Passos:**
+
+  1. ...
+  2. ...
+* **Resultado Esperado:** comportamento correto
+* **Resultado Obtido:** (preencher durante o teste)
+* **Severidade/Prioridade:** classificar impacto
+
+---
+
+## 🤖 Automação Recomendada
+
+Ferramentas como **Cypress** ou **Playwright** podem ser utilizadas para:
+
+* Testes de navegação entre páginas.
+* Fluxo de adicionar e remover itens do carrinho.
+* Validação do formulário de inscrição.
+* Verificação de links e botões principais.
+
+---
+
+## ♿ Acessibilidade
+
+Itens a serem validados:
+
+* Presença de `alt` em todas as imagens.
+* Labels adequados em inputs e botões.
+* Ordem de tabulação lógica.
+* Contraste de cores apropriado.
+
+---
+
+## 📑 Reporte de Bugs
+
+Ao reportar um bug, inclua:
+
+* **Título:** resumo do problema.
+* **Descrição:** contexto do erro.
+* **Passos para reproduzir:** lista ordenada.
+* **Resultado Esperado vs Obtido.**
+* **Evidências:** prints, vídeos ou logs.
+* **Severidade:** blocker, crítica, maior, menor ou trivial.
+
+---
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas. Para mudanças significativas, abra uma issue antes para discussão.
+
+---
